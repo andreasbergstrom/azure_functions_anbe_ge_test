@@ -5,7 +5,7 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 
 @app.route(route="test_function_2")
 def test_function_2(req: func.HttpRequest) -> func.HttpResponse:
-    logging.info('Python HTTP trigger function 2 processed a request..')
+    logging.info('Python HTTP trigger function 2 processed a request...')
 
     name = req.params.get('name')
     if not name:
